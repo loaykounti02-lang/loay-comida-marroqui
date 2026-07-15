@@ -1,12 +1,439 @@
-Loay-Comida-Marroqui
+
+
+restaurante-marroqui/
 │
 ├── index.html
-├── style.css
-├── script.js
+├── menu.html
 ├── carrito.html
 ├── pago.html
+│
+├── css/
+│   └── estilo.css
+│
+├── js/
+│   ├── app.js
+│   └── carrito.js
+│
+└── imagenes//* ==========================
+   ESTILO GENERAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff8ed;
+    color: #3b2414;
+}
+
+
+/* ==========================
+   CABECERA / MENU
+========================== */
+
+header {
+    background: #6b2d1a;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* ==========================
+   SECCION PRINCIPAL
+========================== */
+
+.hero {
+    height: 90vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("../imagenes/restaurante.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.hero p {
+    color: white;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+
+/* BOTON */
+
+.btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #3b2414;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+
+/* ==========================
+   MENU DE COMIDA
+========================== */
+
+.menu {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+
+.menu h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.platos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+
+.plato {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+
+.plato:hover {
+    transform: translateY(-10px);
+}
+
+
+.plato img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.plato h3 {
+    margin: 15px;
+}
+
+
+.precio {
+    color: #b8860b;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================
+   CARRITO Y PAGO
+========================== */
+
+.carrito {
+    padding: 50px 8%;
+}
+
+
+.tarjeta-pago {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin:auto;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+input {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+
+/* ==========================
+   PIE DE PAGINA
+========================== */
+
+footer {
+    background:#6b2d1a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+
+/* ==========================
+   MOVIL
+========================== */
+
+@media(max-width:768px){
+
+    header {
+        flex-direction:column;
+    }
+
+    nav {Sahara-Gourmet/
+│
+├── index.html
+├── menu.html
+├── carrito.html
+│
+├── css/
+│   └── estilo.css
+│
+├── js/
+│   └── carrito.js
+│
+└── imagenes/
+    ├── tajin.jpg
+    ├── cuscus.jpgSahara-Gourmet/
+│
+├── index.html
+├── menu.html
 ├── contacto.html
-└── img/
+│
+├── css/
+│   └── estilo.css
+│
+└── imagenes/
+    ├── tajin.jpg
+    ├── couscous.jpg
+    └── te.jpg
+    ├── pastela.jpg
+    └── te.jpg
+        margin-top:20px;
+    }
+
+    .hero h1 {<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pedido - Sahara Gourmet</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Sahara Gourmet
+</div>
+
+
+<nav>
+
+<a href="index.html">Inicio</a>
+<a href="menu.html">Menú</a>
+<a href="pedido.html">Pedido</a>
+
+</nav>
+
+</header>
 
 
 
+<section class="carrito">
+
+
+<div class="tarjeta-pago">
+
+
+<h2>Haz tu pedido 🍽️</h2>
+
+
+<form>
+
+
+<label>
+Nombre completo
+</label>
+
+<input type="text" placeholder="Tu nombre">
+
+
+<label>
+Teléfono
+</label>
+
+<input type="tel" placeholder="Tu teléfono">
+
+
+<label>
+Dirección de entrega
+</label>
+
+<input type="text" placeholder="Tu dirección">
+
+
+
+<label>
+Elige tu plato
+</label>
+
+
+<select>
+
+<option>
+Tajín de cordero - 18€
+</option>
+
+<option>
+Cuscús Real - 15€
+</option>
+
+<option>
+Pastela Marroquí - 12€
+</option>
+
+<option>
+Té Moruno - 4€
+</option>
+
+</select>
+
+
+
+<label>
+Comentarios del pedido
+</label>
+
+
+<textarea placeholder="Ej: sin picante, hora de entrega..."></textarea>
+
+
+
+<button class="btn" type="submit">
+
+Enviar pedido
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Sahara Gourmet - Cocina Marroquí
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
+        font-size:38px;
+    }
+
+}
+    ├── tajin.jpg
+    ├── couscous.jpg
+    └── te-moruno.jpgform label {
+
+display:block;
+margin-top:15px;
+font-weight:bold;
+
+}
+
+
+select,
+textarea {
+
+width:100%;
+padding:12px;
+margin-top:8px;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+
+textarea {
+
+height:120px;
+resize:none;
+
+}<button class="btn" type="submit">
+
+Enviar pedido
+
+</button>
+
+
+<br><br>
+
+
+<a class="btn" href="https://buy.stripe.com/test_XXXXXX">
+
+Pagar con tarjeta 💳
+
+</a>
