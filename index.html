@@ -436,4 +436,168 @@ Enviar pedido
 
 Pagar con tarjeta 💳
 
-</a>
+</a>/* ==========================
+   MEJORAS PROFESIONALES
+========================== */
+
+
+/* ANIMACIONES */
+
+.hero,
+.menu,
+.carrito {
+    animation: aparecer 1s ease;
+}
+
+
+@keyframes aparecer {
+
+from {
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to {
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+
+/* TITULOS */
+
+h1, h2 {
+
+font-family: Georgia, serif;
+letter-spacing:1px;
+
+}
+
+
+/* TARJETAS DE PLATOS */
+
+.plato {
+
+transition: all 0.4s ease;
+
+}
+
+
+.plato:hover {
+
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+
+}
+
+
+
+/* FORMULARIOS */
+
+input,
+select,
+textarea {
+
+font-size:16px;
+background:#fffaf0;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+outline:none;
+border:2px solid #d4af37;
+
+}
+
+
+
+/* BOTONES */
+
+.btn {
+
+background:#d4af37;
+color:#3b2414;
+border-radius:50px;
+padding:14px 35px;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+
+.btn:hover {
+
+background:#6b2d1a;
+color:white;
+
+}
+
+
+
+/* SECCION DE CONTACTO */
+
+.contacto {
+
+padding:60px 8%;
+text-align:center;
+
+}
+
+
+.contacto p {
+
+font-size:18px;
+margin:10px;
+
+}
+
+
+
+/* RESPONSIVE MOVIL */
+
+@media(max-width:600px){
+
+
+.logo {
+
+font-size:24px;
+
+}
+
+
+nav a {
+
+display:block;
+margin:10px;
+
+}
+
+
+.hero h1 {
+
+font-size:32px;
+
+}
+
+imagenes
+│
+├── logo.png
+├── restaurante.jpg
+├── tajin.jpg
+├── cuscus.jpg
+├── pastela.jpg
+└── te.jpg
+.menu h2 {
+
+font-size:30px;
+
+}
+
+
+}css/estilo.css<img src="imagenes/logo.png">
